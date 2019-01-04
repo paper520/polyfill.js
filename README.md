@@ -1,5 +1,14 @@
-[polyfill.js](https://github.com/yelloxing/polyfill.js) - Compatibility of common methods for different browsers
+Compatibility of common methods for different browsers
 ===============================
+
+****
+### 作者:心叶
+### 邮箱:yelloxing@gmail.com
+****
+
+关注的问题
+--------------------------------------
+针对不同浏览器对ES的支持情况不一样，引入polyfill.js以后，可以统一支持情况（这里只是关注了部分接口）。
 
 ### 免责声明
 
