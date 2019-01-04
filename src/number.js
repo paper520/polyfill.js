@@ -1,14 +1,3 @@
-// 获取函数名称
-// 部分旧浏览器不支持
-if ('name' in Function.prototype === false) {
-    // https://www.ecma-international.org/ecma-262/6.0/#sec-setfunctionname
-    Object.defineProperty(Function.prototype, 'name', {
-        get: function () {
-            return this.toString().match(/^\s*function\s*([^\(\s]*)/)[1];
-        }
-    });
-}
-
 // 表示二个正的浮点数之间的最新差值
 // 你可以由此判断二个浮点数是否相对
 // （因为js浮点运算都不是准确的，不可以简单的等号判断）

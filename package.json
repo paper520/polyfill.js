@@ -1,0 +1,20 @@
+{
+  "name": "polyfill-es",
+  "version":"0.0.1next",
+  "description": "Compatibility of common methods for different browsers.",
+  "main": "build/polyfill.js",
+  "scripts": {
+    "start": "node ./build/tasks/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelloxing/polyfill.js.git"
+  },
+  "author": "心叶",
+  "email": "yelloxing@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yelloxing/polyfill.js/issues"
+  },
+  "homepage": "https://github.com/yelloxing/polyfill.js#readme"
+}
