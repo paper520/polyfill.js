@@ -10,6 +10,20 @@ Compatibility of common methods for different browsers
 --------------------------------------
 针对不同浏览器对ES的支持情况不一样，引入polyfill.js以后，可以统一支持情况（这里只是关注了部分接口）。
 
+如何使用？
+--------------------------------------
+如果你开发的是一个web项目，直接在页面引入打包后的文件后即可：
+
+```html
+<script src="./build/polyfill.js" type="text/javascript"></script>
+```
+
+如果你想通过npm方式管理：
+
+```bash
+npm install --save polyfill-es
+```
+
 ### 免责声明
 
 *   项目中部分数据（如图片等）来自互联网，如果侵犯到对应权益者请联系我们，方便我们及时删除！
