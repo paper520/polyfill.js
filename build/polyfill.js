@@ -4,14 +4,14 @@
 * 
 * author 心叶
 *
-* version 1.0.0
+* version 1.0.0next
 * 
 * build Fri Jan 04 2019
 *
 * Copyright yelloxing
 * Released under the MIT license
 * 
-* Date:Wed Jan 09 2019 17:34:46 GMT+0800 (GMT+08:00)
+* Date:Wed Jan 09 2019 17:37:20 GMT+0800 (GMT+08:00)
 */
 
 // 命名空间路径
