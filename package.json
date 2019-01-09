@@ -1,6 +1,6 @@
 {
   "name": "polyfill-es",
-  "version":"0.0.1next",
+  "version":"1.0.0",
   "description": "Compatibility of common methods for different browsers.",
   "main": "build/polyfill.js",
   "scripts": {

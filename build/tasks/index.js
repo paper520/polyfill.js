@@ -35,6 +35,7 @@ fs.writeFile('build/polyfill.js', banner, function (err) {
         console.log('读取文件列表成功：');
         console.log(files);
 
+        fs.appendFileSync("build/polyfill.js", "\n" + fs.readFileSync("config.js").toString());
         files.forEach(function (filename) {
             console.log('处理文件：' + filename);
 

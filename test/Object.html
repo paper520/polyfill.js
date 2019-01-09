@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../build/polyfill.js"></script>
+    <title>polyfill.js / 测试</title>
+</head>
+
+<body>
+    <script>
+
+        var xiaoming2 = {
+            "name": "小明2号",
+            "age": "19"
+        };
+
+        var xiaoming_new = Object.assign({
+            "name": "小明",
+            "info": "老的小明"
+        }, xiaoming2);
+
+        console.log(xiaoming2);
+        console.log(xiaoming_new);
+
+    </script>
+</body>
+
+</html>
