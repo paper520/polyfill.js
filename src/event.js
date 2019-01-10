@@ -27,3 +27,13 @@ if ('preventDefault' in Event.prototype === false) {
         this.returnValue = false;
     };
 }
+
+// 获取键盘按下键编码
+// https://www.w3.org/TR/uievents/#dom-keyboardevent-which
+if ('keyCode' in Event.prototype === false) {
+    Object.defineProperty(Event.prototype, 'keyCode', {
+        get: function () {
+            return this.which;
+        }
+    });
+}

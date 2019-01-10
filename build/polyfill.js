@@ -11,7 +11,7 @@
 * Copyright yelloxing
 * Released under the MIT license
 * 
-* Date:Wed Jan 09 2019 17:37:20 GMT+0800 (GMT+08:00)
+* Date:Thu Jan 10 2019 13:52:34 GMT+0800 (GMT+08:00)
 */
 
 // 命名空间路径
@@ -95,6 +95,16 @@ if ('preventDefault' in Event.prototype === false) {
     Event.prototype.preventDefault = function () {
         this.returnValue = false;
     };
+}
+
+// 获取键盘按下键编码
+// https://www.w3.org/TR/uievents/#dom-keyboardevent-which
+if ('keyCode' in Event.prototype === false) {
+    Object.defineProperty(Event.prototype, 'keyCode', {
+        get: function () {
+            return this.which;
+        }
+    });
 }
 
 // 获取函数名称
