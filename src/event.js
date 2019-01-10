@@ -33,7 +33,7 @@ if ('preventDefault' in Event.prototype === false) {
 if ('keyCode' in Event.prototype === false) {
     Object.defineProperty(Event.prototype, 'keyCode', {
         get: function () {
-            return this.which;
+            return this.which || this.charCode;
         }
     });
 }

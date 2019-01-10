@@ -11,7 +11,7 @@
 * Copyright yelloxing
 * Released under the MIT license
 * 
-* Date:Thu Jan 10 2019 13:52:34 GMT+0800 (GMT+08:00)
+* Date:Thu Jan 10 2019 14:51:14 GMT+0800 (GMT+08:00)
 */
 
 // 命名空间路径
@@ -102,7 +102,7 @@ if ('preventDefault' in Event.prototype === false) {
 if ('keyCode' in Event.prototype === false) {
     Object.defineProperty(Event.prototype, 'keyCode', {
         get: function () {
-            return this.which;
+            return this.which || this.charCode;
         }
     });
 }
